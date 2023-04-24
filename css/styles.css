@@ -1,0 +1,108 @@
+:root {
+    --shade01: #bca301;
+    --shade02: #958000;
+    --shade03: #6f5f00;
+    --shade04: #4e4000;
+    --shade05: #362200;
+    --collective02: #85b300;
+    --collective03: #00c5ab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--collective02);
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: minmax(360px,600px);
+    justify-content: center;
+}
+
+.main-container .title-container {
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(4,1fr);
+    grid-template-areas: 
+    "pajarito titulo titulo titulo"
+    "pajarito subtitulo subtitulo subtitulo";
+}
+
+.main-container .title-container img {
+    margin: 10px 0 10px 0;
+    display: grid;
+    grid-area: pajarito;
+    width: 80px;
+    align-self: center;
+    justify-self: center;
+}
+
+.main-container .title-container h1 {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-area: titulo;
+    align-self: flex-end;
+    justify-self: left;
+    font-size: xx-large;
+    
+}
+
+.main-container .title-container h2 {
+    display: grid;
+    grid-area: subtitulo;
+    align-self: flex-start;
+    justify-self: left;
+    font-size: larger;
+}
+
+
+.main-container .main-image {
+    margin: 10px 0 10px 0;
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.main-container p {
+    font-size: larger;
+}
+
+.main-container .footer-container {
+    display: grid;
+    margin-top: 10px;
+    height: 50px;
+    background-color: var(--collective03);
+    grid-template:repeat(1,auto) / repeat(8,1fr);
+    grid-template-areas: 
+    "accion1 accion1 accion2 accion2 . . share hearth";
+    align-content: center;
+    
+}
+
+.main-container .footer-container .accion1 {
+    grid-area: accion1;
+}
+
+.main-container .footer-container .accion2 {
+    grid-area: accion2;
+}
+
+.main-container .footer-container .share-icon {
+    grid-area: share;
+}
+
+.main-container .footer-container .heart-icon {
+    grid-area: hearth;
+}
+
+.main-container .footer-container img{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+
