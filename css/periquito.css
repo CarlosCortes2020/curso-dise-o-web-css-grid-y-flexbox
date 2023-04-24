@@ -14,7 +14,7 @@
 }
 
 body {
-    background: var(--collective02);
+    background: var(--shade01);
 }
 
 .main-container {
@@ -26,6 +26,7 @@ body {
 
 .main-container .title-container {
     display: grid;
+    background-color: var(--shade01);
     grid-template: repeat(2,1fr) / repeat(4,1fr);
     grid-template-areas: 
     "pajarito titulo titulo titulo"
@@ -70,13 +71,14 @@ body {
 
 .main-container p {
     font-size: larger;
+    background-color: var(--shade01);
 }
 
 .main-container .footer-container {
     display: grid;
     margin-top: 10px;
     height: 50px;
-    background-color: var(--collective03);
+    background-color: var(--shade01);
     grid-template:repeat(1,auto) / repeat(8,1fr);
     grid-template-areas: 
     "accion1 accion1 accion2 accion2 . . share hearth";
