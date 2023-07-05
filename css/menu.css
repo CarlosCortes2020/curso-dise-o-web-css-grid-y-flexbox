@@ -17,6 +17,10 @@
     font-size: 16px;
 }
 
+.dropdown .dropbtn i {
+    margin: 5px;
+}
+
 .dropdown-content {
     margin-top: 50px;
     display: none;

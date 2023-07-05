@@ -9,15 +9,20 @@
     <link rel="stylesheet" href="./css/font/flaticon.css">
     <link rel="stylesheet" href="./css/media-queries.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/coquer.css">
+    <link rel="stylesheet" href="./css/perritos.css">
+    <script src="https://kit.fontawesome.com/1be1b1612e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <!-- El header funciona para alojar tanto la navbar como la tab bar-->
         <section class="header-icons-container">
             <nav class="header-nav">
-                <section class="dropdown">
-                    <button class="dropbtn">Menú</button>
+                <section class="dropdown">                   
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-bars fa-2xl"></i>    
+                        Menú
+                    </button>                    
                     <div class="dropdown-content">
                         <a href="./coquer.html">Coquer</a>
                         <a href="./periquito.html">Periquito</a>
@@ -29,14 +34,10 @@
             </nav>
             <div class="icons">
                 <a class="linkedin-icon" href="https://www.linkedin.com/in/carlosivancortescruz">
-                    <span class="flaticon-010-linkedin">
-
-                    </span>
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
                 </a>
                 <a class="youtube-icon" href="https://www.youtube.com/channel/UCGN8EnuXakDmrt6y5cmU-PA">
-                    <span class="flaticon-008-youtube">
-
-                    </span>
+                    <i class="fa-brands fa-square-youtube fa-2xl"></i>
                 </a>
             </div>
         </section>
@@ -53,22 +54,16 @@
         </nav>
     </header>
 
-    <main class="perritos-main">
-        <div class="container">
-            <img class="perrito" src="https://images.pexels.com/photos/1390361/pexels-photo-1390361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="perrito  tierno">
-            <div class="brown-rectangle"></div>
-            <div class="midbrown-rectangle"></div>
-            <div class="lobrown-rectangle"></div>
-            <div class="elsebrown-rectangle">
-              <h1 class="title-text">¿Mestizos?</h1>
-              <p>Los perritos suelen ser animales muy cariñosos y leales con sus dueños, lo que puede mejorar el estado de ánimo de las personas. Hablando de los perritos mestizos, éstos suelen ser más saludables que los perros de raza pura, ya que tienen menos predisposición a ciertas enfermedades hereditarias. Otra ventaja es que al adoptar un perro mestizo, se está ayudando a reducir la sobrepoblación de animales en refugios y perreras, brindándoles una segunda oportunidad a estos animales que lo necesitan. </p>
+    <main class="dogs-main">
+        <section class="dogs-cards-container">
+            <div class="dog-card">
+                <div class="dog-card-image"></div>
+                <div class="dog-card-text"></div>
             </div>
-            <div class="skinbrown-rectangle"></div>
-            <div class="circle-brown"></div>  
-            <div class="circle-square"></div>
-        </div>
+            <div class="dog-card"></div>
+        </section>
     </main>
     
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">En este footer colocaremos informacion de la cuenta</footer>
 </body>
 </html>

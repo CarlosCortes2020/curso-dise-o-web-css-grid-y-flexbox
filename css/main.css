@@ -46,8 +46,9 @@ header .header-icons-container .icons {
     justify-self: end;
 }
 
-header .icons span {
+header .icons a {
     color: white;
+    margin: 5px;
 }
 
 .linkedin-icon {
