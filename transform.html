@@ -32,7 +32,7 @@
             height: 100px;          
         }
         .circle2:hover {
-            transform: scale(1.2);
+            transform: scale(2,1.2);
         }
 
         .circle3 {
@@ -104,7 +104,7 @@
         }
         .face.back {
             background: lightgreen;
-            transform: rotateX(180deg);
+            transform: rotateY(180deg);
         }
 
         .parallax-container {
@@ -112,7 +112,7 @@
             height: 100vh;
             perspective: 8px;
             perspective-origin: 50%;
-            overflow-x: hidden;
+            overflow-x: visible;
             overflow-y: scroll;
             position: relative;
         }
@@ -160,22 +160,22 @@
 </head>
 <body>
     <div class="shadow">
-        <div class="circle"></div>
+        <div class="circle">Translate</div>
     </div>    
 
-    <div class="circle2"></div>
+    <div class="circle2">Scale</div>
 
-    <div class="circle3"></div>
+    <div class="circle3">Skew</div>
 
-    <div class="circle4"></div>
+    <div class="circle4">Rotate</div>
 
     <div class="container">
-        <div class="item"></div>
+        <div class="item">Rotar X</div>
     </div>
 
     <div class="card">
-        <div class="face front"></div>
-        <div class="face back"></div>
+        <div class="face front">Rotar Y Frente</div>
+        <div class="face back"> Rotar Y Posterior</div>
     </div>
 
     <div class="parallax-container">
