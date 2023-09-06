@@ -245,7 +245,7 @@
             transform: translateX(200px);
         }
 
-        .menu-container {
+        .submenu {
             display: flex;
             gap: 10px;
         }
@@ -260,8 +260,12 @@
         }
         .menu-container li ul {
             display: block;
-            opacity: 0;
+            visibility: hidden;
             position: absolute;
+            transition-delay: 500ms;
+        }
+        .submenu li:hover > ul {
+            visibility: visible;
         }
     </style>
 </head>
