@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transform translate</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font/flaticon.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <style>
         body {
             margin: 0;
@@ -23,6 +27,12 @@
             width: 100px;
             height: 100px;
         }
+        .figures-main:hover .circle {
+            transform: translate(20px, -20px);
+            translate: 300px;
+            transition: .8s ease;
+
+        }
         .circle:hover {
             transform: translate(20px, -20px);
         }
@@ -34,6 +44,12 @@
             border-radius: 50%;
             width: 100px;
             height: 100px;          
+        }
+        .figures-main:hover .circle2 {
+            transform: scale(2,1.2);   
+            translate: 300px;
+            transition: .5s ease;
+
         }
         .circle2:hover {
             transform: scale(2,1.2);
@@ -47,6 +63,11 @@
             width: 100px;
             height: 100px;          
         }
+        .figures-main:hover .circle3 {
+            transform: skew(20deg);
+            translate: 300px;
+            transition: .5s ease;
+        }
         .circle3:hover {
             transform: skew(20deg);
         }
@@ -59,6 +80,11 @@
             width: 100px;
             height: 100px;
             transform-origin: right top;          
+        }
+        .figures-main:hover .circle4 {
+            transform: rotate(20deg);
+            translate: 300px;
+            transition: .5s ease;
         }
         .circle4:hover {
             transform: rotate(20deg);
@@ -81,6 +107,10 @@
             opacity: 0.5;
             transform-style: preserve-3d;
         }
+        .figures-main:hover .item {
+            transform: rotateX(30deg);
+            transition: transform .5s ease;
+        }
         .item:hover {
             transform: rotateX(30deg);
         }
@@ -92,6 +122,10 @@
             transform-style: preserve-3d;
             position: relative;
             transition: 1s;
+        }
+        .figures-main:hover .card {
+            transform: rotateY(180deg);
+            transition: transform .5s ease;
         }
         .card:hover {
             transform: rotateY(180deg);
@@ -267,79 +301,131 @@
         .submenu li:hover > ul {
             visibility: visible;
         }
+
+
+        @media (min-width: 768px) {
+            .figures-main {
+                width: 768px;
+                margin: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="shadow">
-        <div class="circle">Translate</div>
-    </div>    
+    <header>
+        <section class="header-icons-container">
+            <nav class="header-nav">
+                <section class="dropdown">
+                    <button class="dropbtn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="./coquer.html">Coquer</a>
+                        <a href="./periquito.html">Periquito</a>
+                        <a href="./perritos.html">Perritos</a>
+                        <a href="#">Proyecto 4</a>
+                        <a href="#">Proyecto 5</a>
+                    </div>
+                </section>
+            </nav>
+            <div class="icons">
+                <a class="linkedin-icon" href="https://www.linkedin.com/in/carlosivancortescruz">
+                    <span class="flaticon-010-linkedin">
 
-    <div class="circle2">Scale</div>
+                    </span>
+                </a>
+                <a class="youtube-icon" href="https://www.youtube.com/channel/UCGN8EnuXakDmrt6y5cmU-PA">
+                    <span class="flaticon-008-youtube">
 
-    <div class="circle3">Skew</div>
+                    </span>
+                </a>
+            </div>
+        </section>
 
-    <div class="circle4">Rotate</div>
+        <nav class="social-nav">
+            <section class="nav-logo-container">
+                <a href="./index.html">
+                    <img src="./assets/img/Logo-darkblue.png" alt="Logo de mi Blog">
+                </a>
+            </section>
+            <section class="profile-link">
+                <a href="./perfil.html">Sobre mi... </a>
+            </section>
+        </nav>
+    </header>
 
-    <div class="container">
-        <div class="item">Rotar X</div>
-    </div>
+    <main class="figures-main">
+        <div class="shadow">
+            <div class="figures circle">Translate</div>
+        </div>    
 
-    <div class="card">
-        <div class="face front">Rotar Y Frente</div>
-        <div class="face back"> Rotar Y Posterior</div>
-    </div>
+        <div class="figures circle2">Scale</div>
 
-    <div class="parallax-container">
-        <div class="image image__background">
-            <img src="./assets/img/Background.png" alt="">
+        <div class="figures circle3">Skew</div>
+
+        <div class="figures circle4">Rotate</div>
+
+        <div class="figures container">
+            <div class="item">Rotar X</div>
         </div>
-        <div class=" image image__middle">
-            <div class="cardi one"></div>
-            <div class="cardi two"></div>
-            <div class="cardi three"></div>
+
+        <div class="figures card">
+            <div class="face front">Rotar Y Frente</div>
+            <div class="face back"> Rotar Y Posterior</div>
         </div>
-        <div class="image image__foreground">
-            <img src="./assets/img/Alice.png" alt="">
+
+        <div class="parallax-container">
+            <div class="image image__background">
+                <img src="./assets/img/Background.png" alt="">
+            </div>
+            <div class=" image image__middle">
+                <div class="cardi one"></div>
+                <div class="cardi two"></div>
+                <div class="cardi three"></div>
+            </div>
+            <div class="image image__foreground">
+                <img src="./assets/img/Alice.png" alt="">
+            </div>
         </div>
-    </div>
 
-    <div class="boxes-container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-    </div>
+        <div class="boxes-container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+        </div>
 
-    <div class="circles-container">
-        <div class="circles one"></div>
-        <div class="circles two"></div>
-        <div class="circles three"></div>
-        <div class="circles four"></div>
-        <div class="circles five"></div>
-        <div class="circles six"></div>
-    </div>
+        <div class="circles-container">
+            <div class="circles one"></div>
+            <div class="circles two"></div>
+            <div class="circles three"></div>
+            <div class="circles four"></div>
+            <div class="circles five"></div>
+            <div class="circles six"></div>
+        </div>
 
-    <div class="bolita">
+        <div class="bolita">
 
-    </div>
+        </div>
 
-    <div class="menu-container">
-        <ul class="submenu">
-            <li><a href="/">Mujer</a>
-                <ul class="submenu">
-                    <li><a href="/">Camisetas</a></li>
-                    <li><a href="/">Pantalones</a></li>
-                    <li><a href="/">Shorts</a>
-                        <ul class="submenu">
-                            <li><a href="/">Cortes</a></li>
-                            <li><a href="/">Largos</a></li>
-                            <li><a href="/">Mediums</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>            
-            <li><a href="/">Hombre</a></li>
-            <li><a href="/">Niños</a></li>
-        </ul>
-    </div>
+        <div class="menu-container">
+            <ul class="submenu">
+                <li><a href="/">Mujer</a>
+                    <ul class="submenu">
+                        <li><a href="/">Camisetas</a></li>
+                        <li><a href="/">Pantalones</a></li>
+                        <li><a href="/">Shorts</a>
+                            <ul class="submenu">
+                                <li><a href="/">Cortes</a></li>
+                                <li><a href="/">Largos</a></li>
+                                <li><a href="/">Mediums</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>            
+                <li><a href="/">Hombre</a></li>
+                <li><a href="/">Niños</a></li>
+            </ul>
+        </div>
+    </main>   
+    <footer class="main-footer"></footer> 
 </body>
 </html>
